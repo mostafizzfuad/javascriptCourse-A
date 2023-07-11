@@ -9,5 +9,3 @@ console.log(123)
 
 // alert("Hello World!")
 // document.write("Hello World!")
-
-
