@@ -35,3 +35,7 @@
  * &&
  * !
  **************************/
+
+/****** ternary operator : 
+ * (condition) ? statement (if condition true) : statement (if condition false)
+ **************************/
