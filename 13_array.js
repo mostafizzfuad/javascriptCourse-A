@@ -146,3 +146,58 @@ runs.sort(function (a, b) {
     return b - a // + result = argument duita swap korbe. 
 })
 console.log(runs)
+
+
+// task : (1D array)
+/********** create a function called highestScore that will -
+ * receive a 1D array called scores
+ * return the highest score
+ ***************************************/
+
+function highestScore(scores) {
+    let mx = scores[0]
+    for (let i = 1; i < scores.length; i++) {
+        if (mx < scores[i]) {
+            mx = scores[i]
+        }
+    } 
+    return mx
+}
+
+let scores = [21, 28, 1, 88, 15]
+let maxScore = highestScore(scores)
+console.log(maxScore)
+
+
+
+
+
+
+// task : (2D array)
+/********** create a function called highestRunScore that will -
+ * receive a 2D array called playersInfo
+ * based on highest score, return the name of the player
+ ***************************************/
+
+function highestRunScore(playersInfo) {
+    let highestScorer = playersInfo[0][0]
+    let highestScore = playersInfo[0][1]
+
+    for (let i = 1; i < playersInfo.length; i++) {
+        if (highestScore < playersInfo[i][1]) {
+            highestScore = playersInfo[i][1]
+            highestScorer = playersInfo[i][0]
+        }
+    }
+    return highestScorer
+}
+
+let playersInfo = [
+    ['Rohit', 26],
+    ['Virat', 102],
+    ['Jadeja', 21],
+    ['Dhoni', 35]
+]
+
+nameOfHighestScorer = highestRunScore(playersInfo) // function invoke
+console.log(nameOfHighestScorer)
