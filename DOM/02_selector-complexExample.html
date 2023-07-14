@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Example - Selector</title>
+</head>
+<body>
+    <a href="#">Home</a>
+    <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li>Bangladesh</li>
+    </ul>
+    <div class="my-div">
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- js code start here -->
+    <script>
+        // select home
+        document.querySelector("a").innerHTML = "Change Home"
+
+        // select tutorial
+        document.querySelector("li a").innerHTML = "Change Tutorial"
+
+        // select contact
+        // document.querySelector("div a").innerHTML = "Change Contact"
+        document.querySelector(".my-div a").innerHTML = "Change Contact"
+    </script>
+</body>
+</html>
