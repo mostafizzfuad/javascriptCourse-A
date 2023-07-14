@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick event</title>
+</head>
+<body>
+    <button onclick="myMessage()">Click Me</button>
+
+    <button onclick="subMessage()">Submit</button>
+    <p class="subPara"></p>
+
+    <!-- click button, show img -->
+    <button onclick="sleep()">Sleep</button>
+    <button onclick="noSleep()">No Sleep</button>
+    <br>
+    <br>
+    <img id="imgID" src="#" alt="cat-img" height="200" width="250">
+
+
+
+
+    <!-- js code start here -->
+    <script>
+        // Click Me button
+        function myMessage() {
+            alert("Hello Everyone !!")
+        }
+
+        // Submit button
+        function subMessage() {
+            var message = document.querySelector(".subPara")
+            message.innerHTML = "Your form has been submitted successfully ..."
+        }
+
+        // click button, show img
+        var imgVar = document.querySelector("#imgID")
+        function sleep() {
+            imgVar.src = "images/sleep.jpg"
+        } 
+        function noSleep() {
+            imgVar.src = "images/no-sleep.jpg"
+        } 
+    </script>
+</body>
+</html>
