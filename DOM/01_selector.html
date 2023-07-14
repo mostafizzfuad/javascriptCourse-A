@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+</head>
+<body>
+
+    <h1 id="heading1">this is heading 1</h1>
+    <h2 class="heading2">this is heading 2</h2>
+    <h3>this is heading 3</h3>
+
+    <h4 id="heading4">this is heading 4</h4>
+    <h5 class="heading5">this is heading 5</h5>
+
+    <p>this is paragraph 1</p>
+    <p>this is paragraph 2</p>
+
+    <h6>this is heading 6 - index 0</h6>
+    <h6>this is heading 6 - index 1</h6>
+    <h6>this is heading 6 - index 2</h6>
+    <h6>this is heading 6 - index 3</h6>
+
+    <!-- js code start here -->
+    <script>
+        // getElementById()
+        var h1 = document.getElementById("heading1")
+        h1.innerHTML = "hello heading 1"
+
+        // getElementsByClassName()
+        var h2 = document.getElementsByClassName("heading2")[0]
+        h2.innerHTML = "good morging heading 2"
+
+        // getElementsByTagName()
+        var h3 = document.getElementsByTagName("h3")[0]
+        h3.innerHTML = "good night heading 3"
+        
+        // querySelector()
+        var h4 = document.querySelector("#heading4") // id
+        h4.innerHTML = "hello mostafizur !! heading 4"
+
+        var h5 = document.querySelector(".heading5") // class
+        h5.innerHTML = "enosis solution !! heading 5"
+
+        var p = document.querySelector("p") // tag
+        p.innerHTML = "hello fuad !! this is paragraph"
+        // when we use querySelector() for selecting tag elements, it's only select first tag ... so it's a problem. this problem solved by - querySelectorAll()
+
+        // querySelectorAll()
+        var h6 = document.querySelectorAll("h6")[1]
+        h6.innerHTML = "we changed only index 1"
+    </script>
+</body>
+</html>
