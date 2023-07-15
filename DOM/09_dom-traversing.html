@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    
+    <ol class="students-list">
+        <li class="student-a">student A</li>
+        <li class="student-b">student B</li>
+        <li class="student-c">student C</li>
+    </ol>
+
+
+
+    <!-- js code start here -->
+    <script>
+        // traversing : selecting an element from other elements
+
+        /******************************************
+         * downwards : parent ke dhore child selection
+         *      - querySelector()
+         *      - querySelectorAll()
+         *      - children[]
+         * 
+         * upwards : child ke dhore parent selection
+         *      - parentElement
+         * 
+         * sideways : sibling selection
+         *      - nextElementSibling
+         *      - previousElementSibling
+         *      - parentElement + children + index
+         ******************************************/ 
+
+        /****** 1. downwards ******/ 
+        const studentsList = document.querySelector(".students-list")
+        // const studentA = document.querySelector(".student-a") // find from document
+
+        const studentA = studentsList.querySelector(".student-a") // find from parent
+
+        // children[]
+        const studentB = studentsList.children[1]
+        const studentC = studentsList.children[2]
+
+
+        /****** 2. upwards ******/
+        const stdA = document.querySelector("li")
+        const stdLists = stdA.parentElement
+
+
+        /****** 3. sideways ******/
+        // nextElementSibling
+        const stdntA = document.querySelector("li")
+        const stdntB = stdntA.nextElementSibling
+        const stdntC = stdntB.nextElementSibling
+
+        // previousElementSibling
+        const stC = document.querySelectorAll("li")[2]
+        const stB = stC.previousElementSibling
+        const stA = stB.previousElementSibling
+
+        // parentElement + children + index
+        const studentOfA = document.querySelector("li")
+        const stLists = studentOfA.parentElement
+        const studentOfC = stLists.children[2]
+    </script>
+</body>
+</html> 
