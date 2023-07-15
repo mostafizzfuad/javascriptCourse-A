@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener - Multiple Element</title>
+</head>
+<body>
+    <h1>You have not clicked any button</h1>
+
+    <button class="myButton">Button 1</button>
+    <button class="myButton">Button 2</button>
+    <button class="myButton">Button 3</button>
+    <button class="myButton">Button 4</button>
+    <button class="myButton">Button 5</button>
+
+    <!-- js code start here -->
+    <script>
+        var len = document.querySelectorAll(".myButton").length
+
+        for (var i = 0; i < len; i++) {
+            document.querySelectorAll(".myButton")[i].addEventListener("click", function() {
+                var buttonText = this.innerHTML
+                document.querySelector("h1").innerHTML = buttonText + " is clicked"
+            })
+        }
+    </script>
+</body>
+</html>

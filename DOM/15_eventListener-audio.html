@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Audio</title>
+    <!-- css code -->
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 2rem;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button class="myButton">a</button>
+    <button class="myButton">b</button>
+
+
+    <!-- js code start here -->
+    <script>
+        for (var i = 0; i < 2; i++) {
+            document.querySelectorAll(".myButton")[i].addEventListener("click", function() {
+                var buttonText = this.innerHTML
+                console.log(buttonText)
+
+                audioPlay(buttonText)
+            })
+        }
+        function audioPlay(buttonText) {
+            switch (buttonText) {
+                case "a":
+                    var audio = new Audio('./media/happy.mp3')
+                    audio.play()
+                    break
+                case "b":
+                    var audio = new Audio('./media/sound.mp3')
+                    audio.play()
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

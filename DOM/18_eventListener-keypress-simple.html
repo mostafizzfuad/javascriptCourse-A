@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener - keypress</title>
+</head>
+<body>
+
+    <p>this is a demo</p>
+
+
+    <!-- js code start here -->
+    <script>
+        document.addEventListener("keypress", function(event) {
+            var text = event.key
+            document.querySelector("p").innerHTML = "You have pressed : " + text
+        })
+    </script>
+</body>
+</html>
