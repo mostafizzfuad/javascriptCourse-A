@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider using onclick event</title>
+</head>
+<body>
+    <button onclick="prev()">Previous</button>
+    <img src="./images/bird1.jpg" alt="bird" height="200" width="300">
+    <button onclick="next()">Next</button>
+
+
+    <!-- js code start here -->
+    <script>
+        var photos = ["./images/bird1.jpg", "./images/bird2.jpg", "./images/bird3.jpg"]
+        var imgTag = document.querySelector("img")
+
+        var count = 0
+
+        function next() {
+            count++
+            // alert(count)
+
+            if (count >= photos.length) {
+                count = 0
+                imgTag.src = photos[count]
+            } else {
+                imgTag.src = photos[count]
+            }
+        }
+
+        function prev() {
+            count--
+            // alert(count)
+
+            if (count < 0) {
+                count = photos.length - 1
+                imgTag.src = photos[count]
+            } else {
+                imgTag.src = photos[count]
+            }
+        }
+    </script>
+</body>
+</html>
