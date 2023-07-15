@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Element using onclick</title>
+
+    <!-- css code -->
+    <style>
+        .paraStyle {
+            color: crimson;
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 3rem;
+            font-family: tahoma;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p id="paraId">this is a paragraph</p>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removestyle()">remove style</button>
+
+    <!-- js code start here -->
+    <script>
+        function addStyle() {
+            var myVar = document.querySelector("#paraId")
+            myVar.classList.add("paraStyle")
+
+            // myVar.style.color = "crimson"
+            // myVar.style.backgroundColor = "yellow"
+            // myVar.style.fontWeight = "bold"
+            // myVar.style.fontSize = "3rem"
+            // myVar.style.fontFamily = "tahoma"
+            // myVar.style.fontStyle = "italic"
+        }
+
+        function removestyle() {
+            var myVar = document.querySelector("#paraId")
+            myVar.classList.remove("paraStyle")
+        }
+    </script>
+</body>
+</html>
