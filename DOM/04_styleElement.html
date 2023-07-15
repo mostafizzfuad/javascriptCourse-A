@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELement Style</title>
+</head>
+<body>
+    <h1>this is heading 1</h1>
+    <a href="#">Click Here</a>
+
+    <!-- js code start here -->
+    <script>
+        // change styles
+        var h1 = document.querySelector("h1")
+        h1.innerHTML = "heading 1"
+        h1.style.color = "crimson"
+        h1.style.backgroundColor = "yellow"
+        h1.style.textAlign = "center"
+        h1.style.fontSize = "50px"
+
+        // change href value
+        var link = document.querySelector("a")
+        link.href = "https://github.com/"
+        link.target = "_blank"
+    </script>
+</body>
+</html>

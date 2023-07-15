@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Element</title>
+</head>
+<body>
+    
+    <div id="myDiv" style="background-color: aqua;">
+        <h1>Hello</h1>
+        <h1>Good Bye</h1>
+    </div>
+
+
+    <!-- js code start here -->
+    <script>
+        // create and insert h3 into top of the div
+        var h3 = document.createElement("h3") // create element
+        var text = document.createTextNode("this is heading 3") // create text
+        h3.appendChild(text) // append text with element
+
+        var myDiv = document.getElementById("myDiv") // select parentElement
+
+        // myDiv.appendChild(h3) // its insert last child of the div
+
+        var h1 = document.querySelectorAll("h1")[0]
+        // myDiv.insertBefore(jakeAddKorba, jarAgeAddKorba)
+        myDiv.insertBefore(h3, h1)
+
+
+    </script>
+</body>
+</html>

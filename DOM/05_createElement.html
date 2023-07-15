@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    
+    <div id="myDiv" style="background-color: aqua;">
+        <h1>Hello</h1>
+        <h1>Good Bye</h1>
+    </div>
+
+
+    <!-- js code start here -->
+    <script>
+        var h3 = document.createElement("h3") // create element
+        var text = document.createTextNode("this is heading 3") // create text
+        h3.appendChild(text) // append text with element
+
+        var myDiv = document.getElementById("myDiv") // select parentElement
+        myDiv.appendChild(h3) // append h3 with his parentElement div
+
+        // step 1 : create element
+        // step 2 : create text node
+        // step 3 : append text with element
+        // step 4 : select parentElement .. where we show it ? (jei tag er child hisebe amra new element ke rakhte chassi, sei parentElement ke select korte hbe)
+        // step 5 : append newElement with his parentElement
+    </script>
+</body>
+</html>
