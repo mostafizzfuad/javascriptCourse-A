@@ -13,6 +13,7 @@
             color: aliceblue;
             font-size: 2rem;
             border: 2px solid black;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -26,11 +27,12 @@
         for (var i = 0; i < 2; i++) {
             document.querySelectorAll(".myButton")[i].addEventListener("click", function() {
                 var buttonText = this.innerHTML
-                console.log(buttonText)
+                // console.log(buttonText)
 
                 audioPlay(buttonText)
             })
         }
+
         function audioPlay(buttonText) {
             switch (buttonText) {
                 case "a":

@@ -15,9 +15,10 @@
 
     <!-- js code start here -->
     <script>
+
         // create and insert h3 into top of the div
-        var h3 = document.createElement("h3") // create element
-        var text = document.createTextNode("this is heading 3") // create text
+        var h3 = document.createElement("h3") // createElement
+        var text = document.createTextNode("this is heading 3") // createTextNode
         h3.appendChild(text) // append text with element
 
         var myDiv = document.getElementById("myDiv") // select parentElement
@@ -28,6 +29,12 @@
         // myDiv.insertBefore(jakeAddKorba, jarAgeAddKorba)
         myDiv.insertBefore(h3, h1)
 
+        // step 1 : createElement
+        // step 2 : createTextNode
+        // step 3 : append textNode with element using appendChild()
+        // step 4 : select parentElement
+        // step 5 : select jarAgeAddKorba
+        // step 6 : parentElement.insertBefore(jakeAddKorba, jarAgeAddKorba)
 
     </script>
 </body>

@@ -19,10 +19,10 @@
 
     <h6>this is heading 6 - index 0</h6>
     <h6>this is heading 6 - index 1</h6>
-    <h6>this is heading 6 - index 2</h6>
-    <h6>this is heading 6 - index 3</h6>
+    <h6 class="heading6">this is heading 6 - index 2</h6>
+    <h6 class="heading6">this is heading 6 - index 3</h6>
 
-    <!-- js code start here -->
+    <!-- js code start here --> 
     <script>
         // getElementById()
         var h1 = document.getElementById("heading1")
@@ -45,11 +45,16 @@
 
         var p = document.querySelector("p") // tag
         p.innerHTML = "hello fuad !! this is paragraph"
-        // when we use querySelector() for selecting tag elements, it's only select first tag ... so it's a problem. this problem solved by - querySelectorAll()
 
+        // when we use querySelector() for selecting tag elements, it's only select first element / id / class [i.e : working with index 0] ... so it's a problem. this problem solved by - querySelectorAll()
+
+        
         // querySelectorAll()
-        var h6 = document.querySelectorAll("h6")[1]
+        var h6 = document.querySelectorAll("h6")[1] // tag
         h6.innerHTML = "we changed only index 1"
+
+        var heading6 = document.querySelectorAll(".heading6")[0] // class
+        heading6.innerHTML = "Yeah !! changed it"
     </script>
 </body>
 </html>

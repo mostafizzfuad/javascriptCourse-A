@@ -33,6 +33,7 @@
                 playAnimation(buttonText)
             })
         }
+
         function audioPlay(buttonText) {
             switch (buttonText) {
                 case "a":
@@ -45,13 +46,14 @@
                     break
             }
         }
+        
         function playAnimation(buttonText) {
             var selectedButton = document.querySelector("."+buttonText) // .a or .b
             selectedButton.classList.add("anim")
 
             setTimeout(function() {
                 selectedButton.classList.remove("anim")
-            }, 1000)
+            }, 500)
         }
     </script>
 </body>

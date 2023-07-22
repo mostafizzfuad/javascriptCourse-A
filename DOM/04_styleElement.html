@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELement Style</title>
+    <title>ELement Style & Change Property value</title>
 </head>
 <body>
     <h1>this is heading 1</h1>
@@ -11,15 +11,26 @@
 
     <!-- js code start here -->
     <script>
+        /************** property ******************
+         * element.innerHTML = new HTML content
+         * element.attribute = new value
+         * element.style.property = new style
+         ******************************************/
+
+
         // change styles
         var h1 = document.querySelector("h1")
-        h1.innerHTML = "heading 1"
+
+        // element.innerHTML = new HTML content
+        h1.innerHTML = "change heading 1"
+
+        // element.style.property = new style
         h1.style.color = "crimson"
         h1.style.backgroundColor = "yellow"
         h1.style.textAlign = "center"
         h1.style.fontSize = "50px"
 
-        // change href value
+        // element.attribute = new value
         var link = document.querySelector("a")
         link.href = "https://github.com/"
         link.target = "_blank"

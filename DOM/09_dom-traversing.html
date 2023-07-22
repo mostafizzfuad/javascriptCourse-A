@@ -31,7 +31,7 @@
          * sideways : sibling selection
          *      - nextElementSibling
          *      - previousElementSibling
-         *      - parentElement + children + index
+         *      - selectChildren -> parentElement -> Children[index]
          ******************************************/ 
 
         /****** 1. downwards ******/ 
@@ -61,7 +61,7 @@
         const stB = stC.previousElementSibling
         const stA = stB.previousElementSibling
 
-        // parentElement + children + index
+        // selectChildren -> parentElement -> selectChildren[index]
         const studentOfA = document.querySelector("li")
         const stLists = studentOfA.parentElement
         const studentOfC = stLists.children[2]
