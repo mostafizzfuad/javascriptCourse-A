@@ -1,17 +1,17 @@
 /********************
  * 
  * array is an object
- * collection of variables
+ * array is a collection of variables
  * 
  ********************/
 
 // array literal syntax
-var friends = ['Mostafizur', 'Junnun', 'Siam', 'Masud'] 
+let friends = ['Mostafizur', 'Junnun', 'Siam', 'Masud'] 
 console.log(friends)
 
 
 // array function
-var years = new Array(1990, 1993, 2001, 2002, 2003) // array function syntax
+let years = new Array(1990, 1993, 2001, 2002, 2003) // array function syntax
 console.log(years)
 
 // array muted / re-assigned elements
@@ -23,7 +23,7 @@ console.log(friends.length)
 console.log(years.length)
 
 // type of array
-console.log(typeof years)
+console.log(typeof years) // object
 
 // finding elements in array by index
 console.log(years[2])
@@ -41,26 +41,26 @@ console.log(years[years.length - 1])
 
 
 // array concat
-var country1 = ['Bangladesh', 'India']
-var country2 = ['USA', 'Canada']
+let country1 = ['Bangladesh', 'India']
+let country2 = ['USA', 'Canada']
 
-var country = country1.concat(country2)
+let country = country1.concat(country2)
 console.log(country)
 
 
 // array traversal
-var legend = ['Fuad', 'Siam', 'Bappy', 'Masud']
+let legend = ['Fuad', 'Siam', 'Bappy', 'Masud']
 
-for (var i = 0; i < legend.length; i++) {
+for (let i = 0; i < legend.length; i++) {
     console.log(legend[i])
 }
 
 
 // sum of array elements
-var numbers = [10, 12, 25, 8, 5]
-var sum = 0
+let numbers = [10, 12, 25, 8, 5]
+let sum = 0
 
-for (var i = 0; i < numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i]
 }
 console.log(sum)
@@ -69,7 +69,7 @@ console.log(sum)
 
 /********** splice() method ************
  * method adds and/or removes array elements
- * method overwrites the original array
+ * overwrites the original array
  ***************************************/
 // array.splice(index, howMany, item1, ....., itemX)
 
@@ -87,16 +87,16 @@ console.log(sum)
 //      - New elements(s) to be added.
 
 
-var legends = ['Siam', 'Fuad', 'Junnun', 'Masud']
+let legends = ['Siam', 'Fuad', 'Junnun', 'Masud']
 
 legends.splice(2, 0, 'Eishita', 'Habiba') // At position 2, add 2 elements
-console.log(legends)
+console.log(legends) // [ 'Siam', 'Fuad', 'Eishita', 'Habiba', 'Junnun', 'Masud' ]
 
 legends.splice(2, 2) // At position 2, remove 2 items
-console.log(legends) 
+console.log(legends) // [ 'Siam', 'Fuad', 'Junnun', 'Masud' ]
 
 legends.splice(2, 1, 'Emu', 'Choton') // At position 2, add new items, and remove 1 item
-console.log(legends)
+console.log(legends) // [ 'Siam', 'Fuad', 'Emu', 'Choton', 'Masud' ]
 
 
 

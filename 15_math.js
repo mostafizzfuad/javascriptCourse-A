@@ -1,5 +1,6 @@
 console.log(Math.sqrt(25))
 console.log(Math.abs(-5))
+console.log(Math.pow(2, 3))
 console.log(Math.sin(0))
 console.log(Math.floor(2.4))
 console.log(Math.ceil(2.4))
@@ -24,12 +25,12 @@ console.log(Math.floor(Math.random() * 11) + 10) // 10 to 20
  * show the number of wons and losts
  *************************************************/ 
 
-var numberOfWons = 0
-var numberOfLosts = 0
+let numberOfWons = 0
+let numberOfLosts = 0
 
 for (let i = 0; i < 5; i++) {
-    var guessNumber = parseInt(prompt('Enter a number from 1 to 5 : '))
-    var randomNumber = Math.floor(Math.random() * 5) + 1
+    let guessNumber = parseInt(prompt('Enter a number from 1 to 5 : '))
+    let randomNumber = Math.floor(Math.random() * 5) + 1
 
     if (guessNumber == randomNumber) {
         console.log('You have won')

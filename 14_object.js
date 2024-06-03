@@ -1,5 +1,5 @@
 // how to create an object
-var student1 = {
+const student1 = {
     stdName: 'Mostafizur',
     age: 25,
     cgpa: 3.92,
@@ -26,9 +26,9 @@ function Student(stdName, age, cgpa, language) {
     }
 }
 
-var studentOne = new Student("Fuad", 26, 3.51, ['c', 'c++', 'java', 'javascript'])
-var studentTwo = new Student("Siam", 22, 3.32, ['flutter', 'c++', 'java', 'python'])
-var studentThree = new Student("Junnun", 23, 3.01, ['golang', 'c++', 'java', 'dart'])
+const studentOne = new Student("Fuad", 26, 3.51, ['c', 'c++', 'java', 'javascript'])
+const studentTwo = new Student("Siam", 22, 3.32, ['flutter', 'c++', 'java', 'python'])
+const studentThree = new Student("Junnun", 23, 3.01, ['golang', 'c++', 'java', 'dart'])
 
 console.log(studentOne.age)
 console.log(studentTwo.stdName)

@@ -1,20 +1,23 @@
-var date = new Date()
+let date = new Date()
 console.log(date)
 
-var year = date.getFullYear()
+let year = date.getFullYear()
 console.log(year)
 
-var month = date.getMonth()
+let month = date.getMonth()
 console.log(month) // 0 - 11
 
-var currentDate = date.getDate()
+let currentDate = date.getDate()
 console.log(currentDate)
 
-var currentDay = date.getDay()
+let currentDay = date.getDay()
 console.log(currentDay) // 0 - 6 [ 0 = Sunday, 1 = Monday ... ]
 
-var currentHour = date.getHours()
+let currentHour = date.getHours()
 console.log(currentHour)
 
-var currentMinutes = date.getMinutes()
+let currentMinutes = date.getMinutes()
 console.log(currentMinutes)
+
+let currentSeconds = date.getSeconds()
+console.log(currentSeconds)

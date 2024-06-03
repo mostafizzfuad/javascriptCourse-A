@@ -24,6 +24,11 @@ console.log(add(10, 15)) // function invoke & arguments passing
 
 ************************************/
 
+// create an IIFEs which print sum of two numbers
+(function addTwoNumbers(a, b) {
+    console.log(a + b)
+})(10, 20)
+
 
 
 /******* function expression *******/ 
