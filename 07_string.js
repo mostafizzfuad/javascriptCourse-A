@@ -1,13 +1,17 @@
-var text = 'Bangladesh'
-console.log(text.length)
-console.log(text.charAt(2)) // index start with 0
-console.log(text.toUpperCase())
-console.log(text.toLowerCase())
-console.log(text.slice(2, 5))  // 2 index theke shuru, 5 er ager index porjonto
+let str = 'Bangladesh'
 
-var firstName = 'Mostafizur'
-var lastName = ' Rahman'
-console.log(firstName.concat(lastName))
+console.log(str.length) // 10
+console.log(str.charAt(2)) // n (index start with 0)
+console.log(str.toUpperCase()) // BANGLADESH
+console.log(str.toLowerCase()) // bangladesh
+
+console.log(str.slice(2, 5))  // ngl 
+// 2 index theke shuru, 5 er ager index porjonto  [5 - 2 = 3 ta number => 2, 3, 4]
+
+// concat using built-in method
+let firstName = 'Mostafizur'
+let lastName = ' Rahman'
+console.log(firstName.concat(lastName)) // Mostafizur Rahman
 
 // promtp() - use for user input
 // varName.length

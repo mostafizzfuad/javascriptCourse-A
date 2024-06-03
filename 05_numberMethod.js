@@ -1,29 +1,31 @@
 // ******** convert number to string ******** //
 
-var digit = 125
-console.log(typeof(digit))
+let digit = 125
+console.log(typeof digit) // number
 
 digit = toString(digit) // convert number to string
-console.log(typeof(digit))
+console.log(typeof digit) // string
 
 
 // ******** convert string to number ******** //
-var firstId = "250"
-console.log(typeof(firstId))
+let firstId = "250"
+
+console.log(typeof firstId) // string
 firstId = parseInt(firstId) // convert string to number(integer)
-console.log(typeof(firstId))
+console.log(typeof firstId) // number
 
-var floatNumber = "25.2"
+let floatNumber = "25.2" // string
 floatNumber = parseFloat(floatNumber) // convert string to number(float)
-console.log(typeof(floatNumber))
+console.log(typeof floatNumber) // number
 
 
-var number = 32.36548
-console.log(number.toFixed(2))
+let number = 32.36548
+console.log(number.toFixed(2)) // 32.37
+console.log(typeof number.toFixed(2)) // string
 // toFixed()    - point er por koto ghor show korbe with round. string return kore
 
 console.log(number.toPrecision(4))
-// toPrcision() - length of full number. string return kore
+// toPrcision() - total koto ghor show korbe with round. string return kore
 
 console.log(typeof(Number("152")))
 console.log(Number(true))

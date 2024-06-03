@@ -23,6 +23,6 @@ console.log(false)
 
 
 // ******** typeof() function : এর মধ্যে যেকোনো ডেটা দিলে সেই ডেটার টাইপ বলে দিবে ******** //
-console.log(typeof("Mostafizur Rahman Fuad"))
-console.log(typeof(255))
-console.log(typeof(true))
+console.log(typeof "Mostafizur Rahman Fuad") // string
+console.log(typeof 255) // number
+console.log(typeof true) // boolean

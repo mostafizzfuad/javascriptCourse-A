@@ -1,6 +1,6 @@
 
 
-/********
+/**************************************************
  
 await       break	    case	    catch	    class
 const	    continue	debugger	default     delete
@@ -13,4 +13,4 @@ static	    this	    throw	    try	        true
 typeof	    var	        void	    while	    with    
 yield
 
-********/
+**************************************************/

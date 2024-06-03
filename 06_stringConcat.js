@@ -1,9 +1,11 @@
 console.log('Mostafizur' + ' Rahman')
 
-var firstName = 'Mostafizur'
-var lastName = ' Rahman'
-var fullName = firstName + lastName
-console.log('My name is ' + fullName)
-console.log(firstName.concat(lastName))
+let firstName = 'Mostafizur'
+let lastName = ' Rahman'
 
-// firstVarName.concat(lastVarName)
+let fullName = firstName + lastName
+
+console.log('My name is ' + fullName) // My name is Mostafizur Rahman
+console.log(firstName.concat(lastName)) // Mostafizur Rahman
+
+// firstVarName.concat(secondVarName, ... ... )

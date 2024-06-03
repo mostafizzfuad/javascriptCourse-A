@@ -13,3 +13,7 @@
  * ES6 & API
  * projects
  ************************/
+
+// prerequisites : HTML, CSS
+// Browser : Chrome
+// Code Editor : VS Code

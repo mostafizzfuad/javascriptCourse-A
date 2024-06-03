@@ -1,5 +1,5 @@
 
-// var variableName = value
+// var variableName = value  [don't use]
 // let variableName = value 
 // const variableName = value 
 
