@@ -16,13 +16,12 @@ console.log(add(10, 15)) // function invoke & arguments passing
 
 
 /****** IIFEs (immediately invokeable function expression) ******/ 
-/******* it's run in console *******
+/******* it's run in console *******/
  
 (function display() {
     console.log('Hello World !!')
 })();
 
-************************************/
 
 // create an IIFEs which print sum of two numbers
 (function addTwoNumbers(a, b) {
